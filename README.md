@@ -1,4 +1,4 @@
-# this is manual for install pysqlcipher3
+# this is manual for install pysqlcipher3 for win 10
 ### VERSIONS
 sqlcipher 4.4.2
 pysqlcipher3 1.0.3
