@@ -36,37 +36,29 @@ in root sqlcipher change Makefile.msc
 
 
 TCC = $(TCC) -DSQLITE_TEMP_STORE=1 
->>
+to>>
 TCC = $(TCC) -DSQLITE_TEMP_STORE=2 -DSQLITE_HAS_CODEC -I"C:\Program Files\OpenSSL-Win64\include"
 
-###############################################################################
-# If ICU support is enabled, add the linker options for it.
-#
+###NEXT
+
 !IF $(USE_ICU)!=0
 LTLIBPATHS = $(LTLIBPATHS) /LIBPATH:$(ICULIBDIR)
 LTLIBS = $(LTLIBS) $(LIBICU)
 !ENDIF
 # <</mark>>
 
-# You should not have to change anything below this line
-###############################################################################
+to>>
 
->>
 
-###############################################################################
-# If ICU support is enabled, add the linker options for it.
-#
 !IF $(USE_ICU)!=0
 LTLIBPATHS = $(LTLIBPATHS) /LIBPATH:$(ICULIBDIR)
 LTLIBS = $(LTLIBS) $(LIBICU)
 !ENDIF
 # <</mark>>
-
 LTLIBPATHS = $(LTLIBPATHS) /LIBPATH:"C:\Program Files\OpenSSL-Win64\lib\VC\static"
 LTLIBS = $(LTLIBS) libcrypto64MT.lib libssl64MT.lib ws2_32.lib shell32.lib advapi32.lib gdi32.lib user32.lib crypt32.lib
 
-
-# You should not have to change anything below this line
+#You should not have to change anything below this line
 ###############################################################################
 
 
