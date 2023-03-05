@@ -1,5 +1,10 @@
 # this is manual for install pysqlcipher3 for win 10
+
+For python 3.11 see link
+https://github.com/Monogi/pysqlcipher3
 ### VERSIONS
+python 3.7.4
+
 sqlcipher 4.4.2
 
 pysqlcipher3 1.0.3
